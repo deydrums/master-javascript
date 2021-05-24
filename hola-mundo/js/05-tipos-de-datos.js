@@ -11,8 +11,11 @@ alert("El resultado de la operacion es " + operacion);
 var numero_entero = 44;
 var cadena_texto = "Hola, que tal";
 var verdadero_o_falso = true;
-
 var numero_falso = "33.4";
 
 console.log(Number(numero_falso) + 4);
 console.log(String(numero_entero) + 4);
+
+console.log(typeof numero_entero);
+console.log(typeof numero_falso);
+console.log(typeof verdadero_o_falso);
