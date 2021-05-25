@@ -37,3 +37,10 @@ for(let lenguaje in lenguajes){
 
 document.write("</ul>");
 
+//Busquedas
+var precios = [10,20,50,80,12];
+var busqueda = lenguajes.find(lenguaje=>lenguaje == "PHP");
+var busqueda = lenguajes.findIndex(lenguaje=>lenguaje == "PHP");
+//comprobar precio
+var busqueda = precios.some(precio=>precio >= 20);
+console.log(busqueda);
