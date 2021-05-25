@@ -29,4 +29,8 @@ if(indice > -1){
 }
 
 var peliculas_string = peliculas.join();
-console.log(peliculas_string);
+var cadena = "Texto1, Texto2, Texto3";
+var cadena_array = cadena.split(", ");
+
+
+console.log(cadena_array);
