@@ -3,11 +3,17 @@
 //Arrays multidimensionales
 
 var categorias = ['Accion' , 'Terror', 'Comedia'];
-var peliculas = ['La verdad duele' , 'La vida es bella', 'Ghost Rider'];
+var peliculas = ['La verdad duele' , 'La vida es bella', 'Ghost Rider', 'Spiderman', 'Piratas'];
 
 var cine = [categorias,peliculas];
-
 console.log(cine[0][1]);
+
+//Ordenar alfabetico
+peliculas.sort();
+console.log(peliculas);
+//Ordenar inverso
+peliculas.reverse();
+console.log(peliculas);
 
 /*
 //Agregar elemento
