@@ -39,3 +39,32 @@ if (edad >= 18) {
 }else{
     console.log(nombre + " " +edad +" años, es menor de edad ")
 }
+
+/* 
+OPERADORES LOGICOS
+AND(Y): && 
+OR(O): ||
+Negacion: !
+
+*/
+
+//Negacion 
+var year = 2021;
+if(year != 2016){
+    console.log("El año no es 2016 realmente es "+year);
+}
+
+//AND
+if(year >= 2000 && year <= 2022){
+    console.log("Estamos en la era actual");
+}else{
+    console.log("Estamos en la era post moderna");
+}
+
+//OR
+if (year == 2008 || (year >= 2021 && year == 2021)){
+    console.log("El año es 2008 o 2021");
+}else{
+    console.log("El año no esta registrado");
+}
+
