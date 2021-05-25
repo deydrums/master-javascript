@@ -7,7 +7,12 @@ var year = 2021;
 while (year <= 2051){
     //Ejecuta esto
     console.log("Estamos en el año: " + year);
+
+    if(year == 2035){
+        break;
+    }
     year++;
+
 }
 
 //Do While
