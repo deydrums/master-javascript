@@ -45,4 +45,27 @@ seccion.append(hr);
 //console.log(contenidoEnTexto);
 
 //CONSEGUIR ELEMENTOS POR SU CLASE CSS
+var divsRojos = document.getElementsByClassName('rojo');
+var divsAmarillos = document.getElementsByClassName('amarillo');
+console.log(divsAmarillos);
+divsAmarillos[0].style.background = 'yellow';
+var div;
 
+
+for(div in divsRojos){
+    if(divsRojos[div].className == "rojo"){
+        divsRojos[div].style.background = "red";
+    }   
+}
+
+console.log(divsRojos);
+
+//Query selector
+var id = document.querySelector("#encabezado");
+console.log(id);
+
+var claseRojo = document.querySelector("div.rojo");
+console.log(claseRojo);
+
+var etiqueta = document.querySelector("div");
+console.log(etiqueta);
