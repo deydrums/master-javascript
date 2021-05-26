@@ -37,3 +37,25 @@ boton.addEventListener('mouseover',function(){
 boton.addEventListener('mouseout',function(){
     boton.style.background = "yellow";
 });
+
+//focus
+var input = document.querySelector('#campo_nombre');
+input.addEventListener('focus',function(){
+    console.log("[focus] Estas dentro del input");
+});
+//Blur
+input.addEventListener('blur',function(){
+    console.log("[blur] Estas fuera del input");
+});
+//Keydown
+input.addEventListener('keydown',function(event){
+    console.log("[keydown] Pulsando la tecla ", String.fromCharCode(event.keyCode));
+});
+//Keypress
+input.addEventListener('keypress',function(event){
+    console.log("[keypress] Presionando la tecla ", String.fromCharCode(event.keyCode));
+});
+//Keyup
+input.addEventListener('keyup',function(event){
+    console.log("[keyup] Soltando la tecla ", String.fromCharCode(event.keyCode));
+});
