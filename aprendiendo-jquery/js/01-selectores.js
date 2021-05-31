@@ -31,4 +31,10 @@ $(document).ready(function(){
     //Selectores de atributo
     $('[title="Google"]').css('background','#ccc');
     $('[title="Facebook"]').css('background','blue');
+
+    //otros 
+    //$('p, a').addClass('margen-superior');
+
+    var busqueda = $("#caja .resaltado").eq(0).parent().parent().parent().find('[title="Google"]');
+    console.log(busqueda);
 });
