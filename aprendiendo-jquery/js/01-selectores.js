@@ -8,4 +8,13 @@ $(document).ready(function(){
                     .css("color","green");
     $("#verde").css("background","green")
                 .css("color","white");
+
+    //Selector de clases
+    $('.zebra').css("padding","5px");
+
+    $('.sin_borde').click(function(){
+        console.log("click dado");
+        $(this).addClass('zebra');
+    });
+
 });
