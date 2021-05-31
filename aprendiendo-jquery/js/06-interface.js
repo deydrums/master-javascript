@@ -22,4 +22,10 @@ $(document).ready(function() {
             console.log("Has soltado dentro del area");
         }
     });
+
+    //Efectos
+
+    $('#mostrar').click(function(){
+        $(".caja-efectos").toggle("scale","slow");
+    });
 });
