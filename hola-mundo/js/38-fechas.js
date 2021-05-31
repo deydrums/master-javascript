@@ -14,4 +14,5 @@ var textoHora = `
 `;
 
 console.log(textoHora);
+console.log(Math.ceil(Math.random()*100));
 
