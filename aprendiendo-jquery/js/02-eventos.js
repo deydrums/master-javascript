@@ -38,14 +38,30 @@ $(document).ready(function() {
 
     //Focus y blur
     var nombre = $("#nombre");
+    var datos = $("#datos");
     nombre.focus(function(){
         $(this).css("border","2px solid green");    
     });
 
     nombre.blur(function(){
         $(this).css("border","1px solid #ccc");
-        $("#datos").text($(this).val()).show();
+        datos.text($(this).val()).show();
+    });
+    //Mousedown y Mouseup 
+    datos.mousedown(function(){
+        $(this).css("border-color","gray");
     });
 
+    datos.mouseup(function(){
+        $(this).css("border-color","black");
+    });
+
+    //Mousemove
+    $(document).mousemove(function(){
+        console.log("x: " + event.clientX, "y: " +event.clientY);
+        $('body').css("cursor","none");
+        $("#sigueme").css("left",event.clientX)
+                        .css("top",event.clientY);
+    });
 
 });
