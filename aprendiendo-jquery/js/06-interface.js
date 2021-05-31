@@ -1,4 +1,6 @@
 'use strict'
 $(document).ready(function() {
-    console.log('archivo listo');
+
+    //Mover elemento por la pagina
+    $('.elemento').draggable();
 });
