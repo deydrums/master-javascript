@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendiendo jQueryUi</title>
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    
+
     <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
     <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
     <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
@@ -22,10 +22,34 @@
             margin:20px;
             float:left;
         }
+        .lista-seleccionable li{
+            width:80%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            list-style:none;
+            cursor:pointer;
+        }
+        ul .ui-selecting{
+            background:green;
+        }
+        ul .ui-selected{
+            background:blue;
+        }
     </style>
 </head>
 <body>
     <h1>Aprendiendo jQueryUi</h1>
+
+    <ul class="lista-seleccionable">
+        <li>GTA V</li>
+        <li>Need For Speed</li>
+        <li>Crash Bandicoot</li>
+        <li>Super Mario</li>
+        <li>Galaxian</li>
+    </ul>
+
+
     <div class="elemento">
         Hola, soy un elemento de la web
     </div>
