@@ -19,7 +19,11 @@ var div_profesor = document.querySelector('#profesor');
     .then(user => {
         mostrarJanet(user.data);
         
+    })
+    .catch(error => {
+        alert("error en las peticiones");
     });
+    ;
 
 
 function getUsuarios(){
