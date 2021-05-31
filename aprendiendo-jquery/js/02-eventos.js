@@ -36,4 +36,16 @@ $(document).ready(function() {
                 .css("color","yellow");
     });
 
+    //Focus y blur
+    var nombre = $("#nombre");
+    nombre.focus(function(){
+        $(this).css("border","2px solid green");    
+    });
+
+    nombre.blur(function(){
+        $(this).css("border","1px solid #ccc");
+        $("#datos").text($(this).val()).show();
+    });
+
+
 });
