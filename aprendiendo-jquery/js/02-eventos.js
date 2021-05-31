@@ -3,7 +3,7 @@
 $(document).ready(function() {
     //MouseOver y MouseOut
     var caja = $("#caja");
-
+    /*
     caja.mouseover(function(){
         $(this).css("background","red");
     });
@@ -11,8 +11,18 @@ $(document).ready(function() {
     caja.mouseout(function(){
         $(this).css("background","green");
     });
+    */
 
+    caja.hover()
+    function cambiaRojo(){
+        $(this).css("background","red");
+    };
 
+    function cambiaVerde(){
+        $(this).css("background","green");
+    };
 
+    //Hover
+    caja.hover(cambiaRojo,cambiaVerde);
 
 });
