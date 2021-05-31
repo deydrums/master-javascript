@@ -13,7 +13,10 @@ $(document).ready(function(){
     $('#ocultar').click(function(){
         $(this).hide();
         $('#mostrar').show();
-        caja.slideUp('slow');
+        caja.slideUp('slow',function(){
+            console.log('carte ocultado');
+        });
+        
     });
 
     $('#todoenuno').click(function(){
