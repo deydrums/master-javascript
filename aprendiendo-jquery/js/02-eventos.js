@@ -25,4 +25,15 @@ $(document).ready(function() {
     //Hover
     caja.hover(cambiaRojo,cambiaVerde);
 
+    //Click, Doble Click
+    caja.click(function(){
+        $(this).css("background","blue")
+                .css("color","white");
+    });
+
+    caja.dblclick(function(){
+        $(this).css("background","pink")
+                .css("color","yellow");
+    });
+
 });
