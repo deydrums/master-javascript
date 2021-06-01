@@ -183,6 +183,21 @@ form input[type="submit"]{
     cursor: pointer;
 }
 
+footer{
+    font-family: Helvetica, sans-serif;
+    color: white;
+    height: 47px;
+    background: rgba(51,51,51,0.70);
+    margin: 0px auto;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    margin-top: 50px;
+    line-height: 47px;
+    
+}
+
 @media only screen and (max-width: 768px) {
     #global{
         width:90%;
