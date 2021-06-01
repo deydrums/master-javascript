@@ -198,6 +198,9 @@ footer{
     line-height: 47px;
     border-radius: 10px;
 }
+.bx-wrapper, .bx-viewport{
+    height:250px !important;
+}
 
 @media only screen and (max-width: 768px) {
     #global{
@@ -281,5 +284,8 @@ footer{
         padding-left: 20px;
         padding-right: 20px;
         margin-top: 20px;
+    }
+    .bx-wrapper, .bx-viewport{
+        height:150px !important;
     }
 }
