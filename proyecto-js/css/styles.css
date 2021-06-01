@@ -1,3 +1,4 @@
+
 *{
     margin:0px;
     padding:0px;
@@ -39,33 +40,131 @@ body{
     float: left;
 }
 
-#menu{
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.menu {
     font-family: Helvetica, sans-serif;
     background: #333;
     width:100%;
-    text-transform: uppercase;
     margin-bottom: 20px;
 }
 
-#menu ul{
+
+
+
+.menu ul{
     line-height: 46px;
     list-style: none;
+    display: flex;
+    align-items: center;
 }
 
-#menu ul li{
+.menu ul li {
     height:46px;
     display: inline-block;
     transition: all 300ms;
 }
 
-#menu ul li:hover{
+.menu ul li:hover{
     background: #235E3D;
 }
 
-#menu ul li a{
+.menu ul li a{
     display:block;
     color: white;
     text-decoration: none;
     padding-left: 30px;
     padding-right:30px;
+}
+
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+@media only screen and (max-width: 768px) {
+    #global{
+        width:90%;
+    }
+    .menu {
+        font-family: Helvetica, sans-serif;
+        background: transparent;
+    }
+    .menu ul {
+        position: fixed;
+        left: -100%;
+        top: 7rem;
+        flex-direction: column;
+        background-color: #235E3D;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    #logo{
+        font-size: 15px;
+        width: 200px;
+        height: 60px;
+        line-height: 60px;
+        margin-bottom: 10px;
+    }
+    .menu{
+        margin-bottom: 50px;
+    }
+
+    .menu ul li a{
+        color: white;
+        padding-left: 50px;
+        padding-right:50px;
+    }
+
+
+    .menu ul.active {
+        left: 0;
+    }
+
+    .menu ul li {
+        margin: 2.5rem 0;
+    }
+
+    .boton-menu {
+        float: right;
+        display: block;
+        cursor: pointer;
+    }
+
+    .boton-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .boton-menu.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .boton-menu.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
