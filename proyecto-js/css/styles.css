@@ -38,6 +38,7 @@ body{
     height: 80px;
     margin-bottom: 20px;
     float: left;
+    border-radius: 10px;
 }
 
 .header{
@@ -193,9 +194,9 @@ footer{
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
     line-height: 47px;
-    
+    border-radius: 10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -264,5 +265,21 @@ footer{
     .boton-menu.active .bar:nth-child(3) {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #posts{
+        width:100%;
+    }
+    #sidebar{
+        width:100%;
+    }
+
+    footer{
+        height: 37px;
+        line-height: 37px;
+        width: 85%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
     }
 }
