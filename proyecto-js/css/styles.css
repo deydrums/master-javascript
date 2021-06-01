@@ -207,8 +207,14 @@ footer{
         width:90%;
     }
     .menu {
+        position: relative;
         font-family: Helvetica, sans-serif;
         background: transparent;
+        margin-bottom: 50px;
+        z-index: 3;
+    }
+    .bx-controls-direction{
+        display: none;
     }
     .menu ul {
         position: fixed;
@@ -230,9 +236,6 @@ footer{
         height: 60px;
         line-height: 60px;
         margin-bottom: 10px;
-    }
-    .menu{
-        margin-bottom: 50px;
     }
 
     .menu ul li a{
