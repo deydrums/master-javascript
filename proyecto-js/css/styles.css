@@ -267,6 +267,16 @@ footer{
     padding: 5px;
 }
 
+#reloj{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    color: #333;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align:center;
+}
+
 @media only screen and (max-width: 768px) {
     #global{
         width:90%;
