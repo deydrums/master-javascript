@@ -1,6 +1,6 @@
 //String
-let cadena: string = "David";
-
+let cadena: string | number = "David";
+cadena = 12;
 //number
 let numero: number = 12;
 

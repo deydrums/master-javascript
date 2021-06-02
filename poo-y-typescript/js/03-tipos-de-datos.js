@@ -1,5 +1,6 @@
 //String
 var cadena = "David";
+cadena = 12;
 //number
 var numero = 12;
 //booleano
