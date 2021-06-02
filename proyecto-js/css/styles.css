@@ -229,6 +229,13 @@ footer{
 #selector-theme2{
     display: none;
 }
+
+.subir{
+    color:white;
+    text-decoration: none;
+    display:block;
+    cursor: pointer;
+}
 @media only screen and (max-width: 768px) {
     #global{
         width:90%;
