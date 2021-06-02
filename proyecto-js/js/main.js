@@ -132,6 +132,14 @@ $(document).ready(function(){
       $("#reloj").html(reloj);
     },1000);
   }
-
+  if(window.location.href.indexOf('contact') > -1){
+  //Validacion
+  $("form input[name='date']").datepicker({
+    dateFormat:'dd/mm/yy'
+  });
+  $.validate({
+    lang: 'es'
+  });
+  }
 });
 
