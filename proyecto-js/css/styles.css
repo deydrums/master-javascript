@@ -201,9 +201,9 @@ footer{
     width:50px;
     height:100px;
 }
-#to-green,
-#to-red,
-#to-blue{
+.to-green,
+.to-red,
+.to-blue{
     width:25px;
     height:25px;
     border: 1px solid white;
@@ -214,16 +214,20 @@ footer{
     cursor: pointer;
 }
 
-#to-green{
+.to-green{
     background: #235e3d;
 }
 
-#to-red{
+.to-red{
     background: #ca3413;
 }
 
-#to-blue{
+.to-blue{
     background: #1f87c4;
+}
+
+#selector-theme2{
+    display: none;
 }
 @media only screen and (max-width: 768px) {
     #global{
@@ -312,5 +316,17 @@ footer{
     }
     .bx-wrapper, .bx-viewport{
         height:150px !important;
+    }
+
+    #selector-theme{
+        display:none;
+    }
+    #selector-theme2{
+        display: flex;
+        margin: 0 auto;
+        background:rgba(51,51,51,0.5);
+        width:100px;
+        height:37px;
+        margin-top:10px;
     }
 }
