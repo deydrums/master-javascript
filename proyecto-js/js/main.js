@@ -91,4 +91,32 @@ $(document).ready(function(){
       },500);
       return false;
     });
+
+    //Login falso
+    var form_name = localStorage.getItem("form_name");
+
+    if(form_name != null && form_name != "undefined"){
+      var about_parrafo = $("#about p");
+      about_parrafo.html("<br><strong>Bienvenido, "+form_name+"</strong> ");
+      $("#about div").append("<a href='#' id='logout'>Cerrar sesión</a>");
+        $("#login").hide();
+    }
+
+
+    $("#login form").submit(function(){
+      var form_name = $("#form_name").val();
+      localStorage.setItem("form_name", form_name);
+      
+    });
+    
+    $("#logout").click(function(){
+      localStorage.removeItem("form_name");
+      location.reload();
+    });
+
+
+
+
+
+
 });

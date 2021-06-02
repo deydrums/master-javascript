@@ -236,6 +236,23 @@ footer{
     display:block;
     cursor: pointer;
 }
+
+#about div{
+    width:100%;
+    height: 20px;
+    background: transparent;
+    margin-top:20px;
+    text-align:center;
+}
+
+#logout{
+    background: rgb(73, 73, 73);
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
 @media only screen and (max-width: 768px) {
     #global{
         width:90%;
