@@ -1,5 +1,7 @@
+type alfanumerico = String | number;
+
 //String
-let cadena: string | number = "David";
+let cadena: alfanumerico = "David";
 cadena = 12;
 //number
 let numero: number = 12;
