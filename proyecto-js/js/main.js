@@ -49,16 +49,37 @@ $(document).ready(function(){
     });
 
     //Selector de tema
+
+    var color = localStorage.getItem("theme");
     var theme = $("#theme");
+
+    switch (color) {
+      case "green":
+        theme.attr("href", "css/green.css");
+        break;
+      case "blue":
+        theme.attr("href", "css/blue.css");
+        break;
+      case "red":
+        theme.attr("href", "css/red.css");
+        break;
+      default:
+        break;
+    }
+
+    
     $(".to-green").click(function(){
       theme.attr("href", "css/green.css");
+      localStorage.setItem("theme","green"); 
     });
 
     $(".to-blue").click(function(){
       theme.attr("href", "css/blue.css");
+      localStorage.setItem("theme","blue"); 
     });
 
     $(".to-red").click(function(){
       theme.attr("href", "css/red.css");
+      localStorage.setItem("theme","red"); 
     });
 });
