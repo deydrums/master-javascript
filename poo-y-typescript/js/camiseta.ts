@@ -36,5 +36,23 @@ camiseta.setColor("rojo");
 console.log(camiseta);
 */
 
+//Clase hija
+class Sudadera extends Camiseta{
+    public capucha: boolean;
+
+    setCapucha(capucha: boolean){
+        this.capucha = capucha;
+    }
+
+    getCapucha():boolean{
+        return this.capucha;
+    }
+}
+
 var camiseta = new Camiseta("rojo","Manga larga","Nike","L",15);
 console.log(camiseta);
+
+var sudadera_nike = new Sudadera("rojo","Manga Corta","Adidas","L",25);
+sudadera_nike.setCapucha(true);
+sudadera_nike.setColor("Azul");
+console.log(sudadera_nike);
