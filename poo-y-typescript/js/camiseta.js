@@ -11,7 +11,7 @@ var Camiseta = /** @class */ (function () {
     Camiseta.prototype.setColor = function (color) {
         this.color = color;
     };
-    Camiseta.prototype.getColor = function (color) {
+    Camiseta.prototype.getColor = function () {
         return this.color;
     };
     return Camiseta;
@@ -20,4 +20,6 @@ var Camiseta = /** @class */ (function () {
 var camiseta = new Camiseta("rojo","Manga larga","Nike","L","15");
 camiseta.setColor("rojo");
 console.log(camiseta);
-*/ 
+*/
+var camiseta = new Camiseta("rojo", "Manga larga", "Nike", "L", 15);
+console.log(camiseta);
