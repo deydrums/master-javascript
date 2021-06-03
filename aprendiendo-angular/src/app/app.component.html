@@ -318,7 +318,13 @@
 <div class="content" role="main">
 
   <!-- Highlight Card -->
-  <videojuego></videojuego>
+
+
+  <button (click) = "ocultarVideojuegos(false)" *ngIf="mostrar_videojuegos">Ocultar</button>
+  <button (click) = "ocultarVideojuegos(true)" *ngIf="!mostrar_videojuegos">Mostrar</button>
+
+  <videojuego *ngIf="mostrar_videojuegos"></videojuego>
+
   <zapatillas></zapatillas>
   <cursos></cursos>
   <svg id="clouds" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677" viewBox="0 0 2611.084 485.677">
