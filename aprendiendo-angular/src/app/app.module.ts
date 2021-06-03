@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { VideojuegoComponent } from './videojuego/videojuego.component';
 
 import { ZapatillasComponent } from './zapatillas/zapatillas.component';
+import { CursosComponent } from './cursos/cursos.component';
 @NgModule({
   declarations: [
     AppComponent,
     VideojuegoComponent,
-    ZapatillasComponent
+    ZapatillasComponent,
+    CursosComponent
   ],
   imports: [
     BrowserModule
