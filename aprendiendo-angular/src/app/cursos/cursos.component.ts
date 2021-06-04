@@ -26,7 +26,13 @@ export class CursosComponent implements OnInit {
       //this.nombre = params['nombre'];
       console.log(this.nombre);
       console.log(typeof +params.fallowers);
+
+      if(this.nombre =='ninguno'){
+        this._router.navigate(['/home']);
+      }
     });
   }
-
+  redirigir(){
+    this._router.navigate(['/zapatillas']);
+  }
 }
