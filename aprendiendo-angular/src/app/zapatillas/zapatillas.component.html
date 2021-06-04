@@ -1,6 +1,6 @@
 <h2>{{titulo}}</h2>
 <p>Agregar marca</p>
-<p><input type="text"[(ngModel)]="mi_marca">
+<p><input type="text"[(ngModel)]="mi_marca" (keyup.enter)="mostrarPalabra()"/>
 <button (click)="getMarca()">Mostrar Marca</button>
 <button (click)="addMarca()">Agregar Marca</button>
 </p>
