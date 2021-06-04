@@ -272,6 +272,25 @@
     width: 1920px;
   }
 
+  .nav{
+    margin: 40px;
+    border-radius: 10px;
+    background:rgb(15, 15, 16);
+  }
+
+  .nav a{
+    text-justify: center;
+    justify-content: space-evenly;
+    text-decoration:none;
+    color:white;
+    font-size: 20px;
+    padding:20px;
+    
+  }
+  .nav a:hover{
+    background:#ccc;
+  }
+
 
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
@@ -315,6 +334,7 @@
 
 </div>
 
+
 <div class="content" role="main" [ngStyle]="{
                                               'background':config.fondo,
                                               'padding': '20px',
@@ -333,7 +353,16 @@
   <zapatillas></zapatillas>
   <cursos></cursos>
   -->
+  <nav class="nav">
+    <a [routerLink]="['/']">Home</a>
+    <a [routerLink]="['/zapatillas']" >Zapatillas</a>
+    <a [routerLink]="['/cursos']" >Cursos</a>
+    <a [routerLink]="['/videojuego']" >Videojuego</a>
+  </nav>
+
   <p>{{descripcion}}</p>
+
+
 
   <!-- <zapatillas></zapatillas> -->
 
