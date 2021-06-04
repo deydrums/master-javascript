@@ -18,3 +18,19 @@
   </li>
 
 </ul>
+
+<p>El color de la mayoria de nuestras zapatillas es: </p>
+<ul [ngSwitch] = "color">
+    <li *ngSwitchCase="'yellow'">
+        El colo predominante es <span [ngStyle]="{'background' : color}">amarillo.</span>
+    </li>
+    <li *ngSwitchCase="'red'">
+        El colo predominante es <span [ngStyle]="{'background' : color}">rojo.</span>
+    </li>
+    <li *ngSwitchCase="'blue'">
+        El colo predominante es <span [ngStyle]="{'background' : color}">azul.</span>
+    </li>
+    <li *ngSwitchCase="'orange'">
+        El colo predominante es <span [ngStyle]="{'background' : color}">naranja.</span>
+    </li>
+</ul>
