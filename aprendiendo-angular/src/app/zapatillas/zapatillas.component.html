@@ -1,8 +1,8 @@
 <h2>{{titulo}}</h2>
 <p>Agregar marca</p>
-<p><input type="text"[(ngModel)]="mi_marca" (keyup.enter)="mostrarPalabra()"/>
-<button (click)="getMarca()">Mostrar Marca</button>
-<button (click)="addMarca()">Agregar Marca</button>
+<p><input type="text" [(ngModel)]="mi_marca" (keyup.enter)="mostrarPalabra()" />
+  <button (click)="getMarca()">Mostrar Marca</button>
+  <button (click)="addMarca()">Agregar Marca</button>
 </p>
 <p>{{mi_marca}} </p>
 
@@ -11,10 +11,10 @@
 
 
 <ul>
-    <li *ngFor="let marca of marcas; let indice = index">
-      {{indice + ' ' + marca}}
-      <button (click)="borrarMarca(indice)">Borrar</button>
-    </li>
+  <li *ngFor="let marca of marcas; let indice = index">
+    {{indice + ' ' + marca}}
+    <button (click)="borrarMarca(indice)">Borrar</button>
+  </li>
 </ul>
 
 <p>Las deportivas que tenemos disponibles son las siguientes</p>
@@ -24,7 +24,7 @@
     <span [ngStyle]="{
         'text-decoration': !deportiva.stock ? 'line-through' : 'none'
     }">
-    {{deportiva.nombre}} - <strong>Q.{{deportiva.precio}}</strong></span>
+      {{deportiva.nombre}} - <strong [class.altoPrecio]="deportiva.precio >= 80">Q.{{deportiva.precio}}</strong></span>
     <span *ngIf="deportiva.precio <= 80" [style.background]="deportiva.precio <80 ? 'green': 'transparent'"
       [style.color]="deportiva.precio <80 ? 'white': 'black'"> ¡En Oferta!</span>
   </li>
@@ -34,17 +34,17 @@
 <p>El color de la mayoria de nuestras zapatillas es: </p>
 
 <input type="text" [(ngModel)]="color">
-<ul [ngSwitch] = "color">
-    <li *ngSwitchCase="'yellow'">
-        El colo predominante es <span [ngStyle]="{'background' : color}">amarillo.</span>
-    </li>
-    <li *ngSwitchCase="'red'">
-        El colo predominante es <span [ngStyle]="{'background' : color}">rojo.</span>
-    </li>
-    <li *ngSwitchCase="'blue'">
-        El colo predominante es <span [ngStyle]="{'background' : color}">azul.</span>
-    </li>
-    <li *ngSwitchCase="'orange'">
-        El colo predominante es <span [ngStyle]="{'background' : color}">naranja.</span>
-    </li>
+<ul [ngSwitch]="color">
+  <li *ngSwitchCase="'yellow'">
+    El colo predominante es <span [ngStyle]="{'background' : color}">amarillo.</span>
+  </li>
+  <li *ngSwitchCase="'red'">
+    El colo predominante es <span [ngStyle]="{'background' : color}">rojo.</span>
+  </li>
+  <li *ngSwitchCase="'blue'">
+    El colo predominante es <span [ngStyle]="{'background' : color}">azul.</span>
+  </li>
+  <li *ngSwitchCase="'orange'">
+    El colo predominante es <span [ngStyle]="{'background' : color}">naranja.</span>
+  </li>
 </ul>
