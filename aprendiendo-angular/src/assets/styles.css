@@ -10,3 +10,26 @@
 .subrayado{
     text-decoration: underline;
 }
+
+.nav{
+    margin: 40px;
+    border-radius: 10px;
+    background:rgb(15, 15, 16);
+  }
+
+  .nav a{
+    text-justify: center;
+    justify-content: space-evenly;
+    text-decoration:none;
+    color:white !important;
+    font-size: 20px;
+    padding:20px;
+    
+  }
+  .nav a:hover{
+    background:#ccc;
+  }
+
+  .active{
+    background:#ccc;
+  }
