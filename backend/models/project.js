@@ -5,11 +5,13 @@ var Schema = mongoose.Schema;
 var ProjectSchema = Schema({
     name: String,
     descripcion: String,
-    categoria: String, 
+    category: String, 
+    langs: String,
     year: Number,
-    langs: [String]
+    image: String
+    
 });
 
-module.exports = mongoose.model('Project','ProjectSchema');
+module.exports = mongoose.model('Project',ProjectSchema);
 
 //projects ===>  Guarda los documents en la coleccion
