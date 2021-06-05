@@ -19,7 +19,10 @@ app.get('/', (req, res) => {
     );
 });
 
-app.get('/test', (req, res) => {
+app.post('/test/:id', (req, res) => {
+    console.log(req.body.nombre);
+    console.log(req.query.web);
+    console.log(req.params.id);
     res.status(200).send({
         message: 'Hola mundo desde mi API de NodeJS'
     });
@@ -27,3 +30,5 @@ app.get('/test', (req, res) => {
 
 //exportar
 module.exports = app;
+
+//http://localhost:3700/test/88?web=deydrums.com
