@@ -8,14 +8,14 @@ body {
   font-family: 'open sans';
 }
 
-.contenedor {
+.container {
   padding: 60px 0;
   width: 90%;
   max-width: 1000px;
   margin: auto;
   overflow: hidden;
 }
-
+/*****************************HEADER ************************************/
 header {
   width: 100%;
   height: 400px;
@@ -48,11 +48,11 @@ header .textos-header {
 }
 
 .wave {
-  position:static;
+  position: static;
   bottom: 0;
   width: 100%;
 }
-
+/*****************************MENU************************************/
 .menu {
   background: rgba(34, 146, 103, 0.432);
   width: 100%;
@@ -85,9 +85,9 @@ header .textos-header {
   padding-right: 30px;
 }
 
-.selected{
-    color: rgba(34, 146, 103, 1) !important;
-    background: #fff;
+.selected {
+  color: rgba(34, 146, 103, 1) !important;
+  background: #fff;
 }
 
 .bar {
@@ -104,48 +104,85 @@ header .textos-header {
   display: none;
 }
 
-/*footer*/
+/*****************************FOOTER ************************************/
 
-footer{
-    background: #414141;
-    padding: 60px 0 30px 0;
-    margin: auto;
-    overflow: hidden;
+footer {
+  background: #414141;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
 }
 
-.contenedor-footer{
-    display:flex;
-    width: 90%;
-    justify-content: space-evenly;
-    margin: auto;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #ccc;
+.contenedor-footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
 }
 
-.content-foo{
-    text-align: center;
+.content-foo {
+  text-align: center;
 }
 
-.content-foo h4{
+.content-foo h4 {
+  color: #fff;
+  border-bottom: 3px solid rgba(34, 146, 103, 1);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.content-foo p {
+  color: #ccc;
+}
+
+.titulo-final {
+  text-align: center;
+  font-size: 12px;
+  margin: 20px 0 0 0;
+  color: #9e9797;
+}
+
+/*****************************TITLES ************************************/
+.title {
+  color: rgb(34, 146, 103);
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+/*****************************ABOUT ME************************************/
+.container-about {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image-about {
+  width: 20%;
+}
+
+.container-about .content-text {
+  width: 60%;
+}
+.content-text h3 span{
+    background: rgb(34, 146, 103);
     color: #fff;
-    border-bottom: 3px solid rgba(34, 146, 103, 1);
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align:center;
+    width:30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgb(15, 66, 47);
+    margin-right: 5px;
+    margin-top: 15px;
+    margin-right: 10px;
 }
 
-.content-foo p{
-    color: #ccc;
+.content-text p{
+    margin-top: 10px;
+    text-align: justify;
 }
-
-.titulo-final{
-    text-align: center;
-    font-size: 12px;
-    margin: 20px 0 0 0;
-    color: #9e9797;
-}
-
-
-
 @media screen and (max-width:900px) {
   header {
     background-position: center;
@@ -173,12 +210,12 @@ footer{
     left: -100%;
     flex-direction: column;
     width: 100%;
-    height : 100%;
+    height: 100%;
     border-radius: 10px;
     text-align: center;
     background: rgba(68, 197, 176, 0.815);
     transition: 0.3s;
-    box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
 
   .menu ul li {
@@ -191,7 +228,7 @@ footer{
     float: right;
     display: block;
     cursor: pointer;
-    margin-top:10px;
+    margin-top: 10px;
     margin-right: 10px;
   }
 
@@ -212,5 +249,40 @@ footer{
   .menu ul.active {
     left: 0;
   }
+
+
+  /**SOBRE MI**/
+
+  .container-about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-about .content-text {
+    width: 90%;
+  }
+
+  .image-about {
+    width: 40%;
+  }
+
+/*****************************FOOTER ************************************/
+
+  
+  .contenedor-footer {
+    flex-direction: column;
+  }
+  
+  .content-foo {
+    margin-bottom:10px;
+  }
+  
+  .content-foo h4 {
+    border: none;
+  }
+  
+
+
 
 }
