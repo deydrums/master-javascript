@@ -20,8 +20,8 @@ body {
 header {
   width: 100%;
   height: 400px;
-  background: linear-gradient(to right, rgba(50, 250, 150, 0.671), hsla(177, 45%, 52%, 0.664)), url(../img/portada.jpg);
-  background: linear-gradient(to right, rgba(50, 250, 150, 0.671), hsla(177, 45%, 52%, 0.664)), url(../img/portada.jpg);
+  background: linear-gradient(to right, rgba(50, 250, 150, 0.37), hsla(177, 45%, 52%, 0.37)), url(../img/portada.jpg);
+  background: linear-gradient(to right, rgba(50, 250, 150, 0.37), hsla(177, 45%, 52%, 0.37)), url(../img/portada.jpg);
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -56,7 +56,7 @@ header .textos-header {
 
 /*****************************MENU************************************/
 .menu {
-  background: rgba(34, 146, 103, 0.432);
+  background: rgba(34, 146, 103, 0.048);
   width: 100%;
 }
 
@@ -231,11 +231,11 @@ input[type=submit]:hover {
 
 input[disabled],
 input[disabled]:hover {
-    background-color: #04AA6D;
-    color: white;
-    opacity: 0.4;
-    cursor: not-allowed;
-  }
+  background-color: #04AA6D;
+  color: white;
+  opacity: 0.4;
+  cursor: not-allowed;
+}
 
 
 
@@ -251,12 +251,12 @@ input[disabled]:hover {
   margin-top: 6px;
 }
 
-.col-75 span{
-    display: block;
-    width: 100%;
-    color:rgba(34, 146, 103, 1);
-    margin-bottom:10px;
-    text-align:right;
+.col-75 span {
+  display: block;
+  width: 100%;
+  color: rgba(34, 146, 103, 1);
+  margin-bottom: 10px;
+  text-align: right;
 }
 
 .row:after {
@@ -271,7 +271,7 @@ input[disabled]:hover {
   }
 
   .textos-header h1 {
-    font-size: 40px;
+    font-size: 45px;
   }
 
   .textos-header h2 {
@@ -332,8 +332,7 @@ input[disabled]:hover {
     left: 0;
   }
 
-
-  /**SOBRE MI**/
+  /*****************************SOBRE MI ************************************/
 
   .container-about {
     flex-direction: column;
@@ -371,15 +370,17 @@ input[disabled]:hover {
     width: 100%;
   }
 
-  .col-25 {
-    width: 30%;
+  .col-25,
+  .col-75,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
   }
 
-  .col-75 {
-    width: 70%;
+  input[type=submit] {
+    margin-top: 20px;
+    padding: 30px;
   }
-
-
 
 
 }
