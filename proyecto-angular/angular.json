@@ -27,10 +27,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/css/styles.css"
+              "src/assets/css/styles.css",
+              "src/assets/bxslider-4-4.2.12/dist/jquery.bxslider.min.css"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js"
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/bxslider-4-4.2.12/dist/jquery.bxslider.min.js"
             ]
           },
           "configurations": {
@@ -96,7 +98,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css"            
             ],
             "scripts": []
           }
