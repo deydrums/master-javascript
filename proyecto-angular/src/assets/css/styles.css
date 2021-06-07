@@ -265,6 +265,37 @@ input[disabled]:hover {
   clear: both;
 }
 
+.messages{
+  display:flex;
+  justify-content:space-evenly;
+  width: 100%;
+
+
+}
+.message {
+  display: block;
+  width: 500px;
+  text-align: center;
+  padding:10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.message.success {
+  background: rgba(117, 228, 163, 0.431);
+}
+
+.message.success span {
+  font-weight: 550;
+}
+.message.success span a{
+  text-decoration: none;
+  color: rgb(6, 32, 18);;
+}
+.message.failed { 
+  background: rgba(228, 117, 117, 0.431);
+}
+
 @media screen and (max-width:900px) {
   header {
     background-position: center;
