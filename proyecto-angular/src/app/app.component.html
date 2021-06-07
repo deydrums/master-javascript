@@ -1,9 +1,17 @@
 
-  <router-outlet></router-outlet>
-  
-  <ul>
-    <li><a [routerLink]="['/sobre-mi']">Sobre mi</a></li>
-    <li><a [routerLink]="['/proyectos']">Mis proyectos</a></li>
-    <li><a [routerLink]="['/crear-proyecto']">Crear proyecto</a></li>
-    <li><a [routerLink]="['/contacto']">Contacto</a></li>
-  </ul>
+
+
+  <header class="header" id="inicio">
+      <img src="../assets/img/hamburguesa.svg" alt="" class="hamburger">
+      <nav class="menu-navegacion">
+        <a [routerLink]="['/sobre-mi']">Sobre mi</a>
+        <a [routerLink]="['/proyectos']">Mis proyectos</a>
+        <a [routerLink]="['/crear-proyecto']">Crear proyecto</a>
+        <a [routerLink]="['/contacto']">Contacto</a>
+      </nav>
+      <div class="contenedor head">
+          <h1 class="titulo">Convertimos tus suenos en realidad</h1>
+          <p class="copy"> Laboris excepteur sunt esse qui nisi labore veniam quis est</p>
+      </div>
+      <router-outlet></router-outlet>
+  </header>
