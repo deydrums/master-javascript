@@ -69,7 +69,7 @@
           <label for="image">Imagen</label>
         </div>
         <div class="col-75">
-          <input type="file" name="image" placeholder="Subir Imagen" >
+          <input type="file" name="image" placeholder="Subir Imagen" (change)="fileChangeEvent($event)" >
         </div>
       </div>
 
