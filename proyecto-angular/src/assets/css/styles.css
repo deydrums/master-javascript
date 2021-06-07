@@ -295,6 +295,55 @@ input[disabled]:hover {
 .message.failed { 
   background: rgba(228, 117, 117, 0.431);
 }
+/*****************************PORTAFOLIO************************************/
+
+.galeria-port{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.imagen-port{
+  width:30%;
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.imagen-port > img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display: block;
+}
+
+.hover-galeria{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(0);
+  background: rgba(6, 132, 54, 0.7);
+  transition: transform 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+}
+
+.hover-galeria img{
+  width:50px;
+}
+
+.hover-galeria p{
+  color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+  transform: scale(1);
+}
 
 @media screen and (max-width:900px) {
   header {
