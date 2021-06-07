@@ -1,4 +1,4 @@
-<section class="container detail">
+<section class="container detail" *ngIf="project">
     <h2 class="title" *ngIf="project">{{project.name}}</h2>
     <div class="container-detail">
 
@@ -15,7 +15,7 @@
             <p>{{project.langs}}</p>
         </div>
         <div class="actions">
-        <a href="#" class="btn btn-edit">Editar</a>
+        <a [routerLink]="['/editar-proyecto',project._id]" class="btn btn-edit">Editar</a>
         <a (click)="deleteProject(project._id)" class="btn btn-delete">Borrar</a>
         </div>
     </div>

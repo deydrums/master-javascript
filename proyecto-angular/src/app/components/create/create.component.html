@@ -1,12 +1,12 @@
-<section class="container about">
+<section class="container about" *ngIf="project">
   <h2 class="title">{{title}}</h2>
 
   <div class="messages">
   <div class="message success" *ngIf="status == 'success'">
-    El proyecto se ha creado correctamente, puedes verlo <span><a [routerLink]="['/proyecto',save_project._id]">Aquí</a></span>
+    El proyecto se ha guardado correctamente <span><a [routerLink]="['/proyecto',save_project._id]">Aquí</a></span>
   </div>
   <div class="message failed" *ngIf="status == 'failed'">
-    El proyecto no se ha podido crear
+    El proyecto no se ha podido guardar
   </div>
 </div>
 
