@@ -60,6 +60,9 @@ export class EditComponent implements OnInit {
               this.save_project = result.project;
               this.status = 'success';
             });
+          }else{
+            this.status = 'success';
+            this.save_project = response.project;
           }
          
           
