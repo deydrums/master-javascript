@@ -229,6 +229,16 @@ input[type=submit]:hover {
   color: #04AA6D;
 }
 
+input[disabled],
+input[disabled]:hover {
+    background-color: #04AA6D;
+    color: white;
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+
+
 .col-25 {
   float: left;
   width: 25%;
@@ -239,6 +249,14 @@ input[type=submit]:hover {
   float: left;
   width: 75%;
   margin-top: 6px;
+}
+
+.col-75 span{
+    display: block;
+    width: 100%;
+    color:rgba(34, 146, 103, 1);
+    margin-bottom:10px;
+    text-align:right;
 }
 
 .row:after {
@@ -277,7 +295,7 @@ input[type=submit]:hover {
     height: 100%;
     border-radius: 10px;
     text-align: center;
-    background: rgba(68, 197, 176, 0.815);
+    background: rgba(68, 197, 176, 0.959);
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }

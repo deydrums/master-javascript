@@ -1,66 +1,70 @@
 <section class="container about">
-    <h2 class="title">{{title}}</h2>
-    <div class="form-new-project">
-        <form #projectForm = "ngForm" (ngSubmit)="onSubmit(projectForm)">
+  <h2 class="title">{{title}}</h2>
+  <div class="form-new-project">
+    <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
 
 
-            <div class="row">
-                <div class="col-25">
-                    <label for="name">Nombre</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" name="name" #name="ngModel" [(ngModel)]="project.name">
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="name">Nombre</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="name" #name="ngModel" [(ngModel)]="project.name" required>
+          <span *ngIf="name.touched && !name.valid">El nombre es obligatorio</span>
+        </div>
+      </div>
 
-            <div class="row">
-                <div class="col-25">
-                    <label for="descripcion">Descripcion</label>
-                </div>
-                <div class="col-75">
-                    <textarea name="descripcion" #descripcion="ngModel" [(ngModel)]="project.descripcion"></textarea>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="descripcion">Descripcion</label>
+        </div>
+        <div class="col-75">
+          <textarea name="descripcion" #descripcion="ngModel" [(ngModel)]="project.descripcion" required></textarea>
+          <span *ngIf="descripcion.touched && !descripcion.valid">La descripción es obligatoria</span>
+        </div>
+      </div>
 
-            <div class="row">
-                <div class="col-25">
-                    <label for="category">Categoria</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" name="category" #category="ngModel" [(ngModel)]="project.category">
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="category">Categoria</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="category" #category="ngModel" [(ngModel)]="project.category" required>
+          <span *ngIf="category.touched && !category.valid">La categoria es obligatoria</span>
+        </div>
+      </div>
 
-            <div class="row">
-                <div class="col-25">
-                    <label for="year">Año</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" name="year" #year="ngModel" [(ngModel)]="project.year">
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="year">Año</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="year" #year="ngModel" [(ngModel)]="project.year" >
+        </div>
+      </div>
 
-            <div class="row">
-                <div class="col-25">
-                    <label for="langs">Lenguajes</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" name="langs" #langs="ngModel" [(ngModel)]="project.langs">
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="langs">Lenguajes</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="langs" #langs="ngModel" [(ngModel)]="project.langs" required>
+          <span *ngIf="langs.touched && !langs.valid">Los lenguajes son obligatorios</span>
+        </div>
+      </div>
 
-            <div class="row">
-                <div class="col-25">
-                    <label for="image">Imagen</label>
-                </div>
-                <div class="col-75">
-                    <input type="file" name="image" placeholder="Subir Imagen">
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="image">Imagen</label>
+        </div>
+        <div class="col-75">
+          <input type="file" name="image" placeholder="Subir Imagen" >
+        </div>
+      </div>
 
-            <div class="row">
-                <input type="submit" value="Guardar">
-              </div>
-        </form>
-    </div>
+      <div class="row">
+        <input type="submit" value="Guardar" [disabled]="!projectForm.form.valid">
+      </div>
+    </form>
+  </div>
 </section>
