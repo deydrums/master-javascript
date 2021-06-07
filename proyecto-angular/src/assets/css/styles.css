@@ -15,6 +15,7 @@ body {
   margin: auto;
   overflow: hidden;
 }
+
 /*****************************HEADER ************************************/
 header {
   width: 100%;
@@ -52,6 +53,7 @@ header .textos-header {
   bottom: 0;
   width: 100%;
 }
+
 /*****************************MENU************************************/
 .menu {
   background: rgba(34, 146, 103, 0.432);
@@ -151,6 +153,7 @@ footer {
   text-align: center;
   margin-bottom: 60px;
 }
+
 /*****************************ABOUT ME************************************/
 .container-about {
   display: flex;
@@ -164,25 +167,86 @@ footer {
 .container-about .content-text {
   width: 60%;
 }
-.content-text h3 span{
-    background: rgb(34, 146, 103);
-    color: #fff;
-    border-radius: 50%;
-    display: inline-block;
-    text-align:center;
-    width:30px;
-    height: 30px;
-    padding: 2px;
-    box-shadow: 0 0 6px 0 rgb(15, 66, 47);
-    margin-right: 5px;
-    margin-top: 15px;
-    margin-right: 10px;
+
+.content-text h3 span {
+  background: rgb(34, 146, 103);
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  box-shadow: 0 0 6px 0 rgb(15, 66, 47);
+  margin-right: 5px;
+  margin-top: 15px;
+  margin-right: 10px;
 }
 
-.content-text p{
-    margin-top: 10px;
-    text-align: justify;
+.content-text p {
+  margin-top: 10px;
+  text-align: justify;
 }
+
+/*****************************CREAR PROYECTO************************************/
+.form-new-project {
+  width: 60vw;
+  margin: 0 auto;
+  background: rgba(78, 78, 78, 0.041);
+  padding: 20px;
+}
+
+
+input[type=text],
+input[type=file],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: #04AA6D;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 @media screen and (max-width:900px) {
   header {
     background-position: center;
@@ -267,21 +331,36 @@ footer {
     width: 40%;
   }
 
-/*****************************FOOTER ************************************/
+  /*****************************FOOTER ************************************/
 
-  
+
   .contenedor-footer {
     flex-direction: column;
   }
-  
+
   .content-foo {
-    margin-bottom:10px;
+    margin-bottom: 10px;
   }
-  
+
   .content-foo h4 {
     border: none;
   }
-  
+
+
+
+  /*****************************CREAR PROYECTO************************************/
+  .form-new-project {
+    width: 100%;
+  }
+
+  .col-25 {
+    width: 30%;
+  }
+
+  .col-75 {
+    width: 70%;
+  }
+
 
 
 
