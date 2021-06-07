@@ -3,7 +3,7 @@
 
     <ul>
         <li *ngFor="let project of projects">
-
+            <img src="{{url+'get-image/'+project.image}}" *ngIf="project.image">
             {{project.name}}
             {{project.category}}
         </li>
