@@ -213,6 +213,7 @@ label {
   display: inline-block;
 }
 
+.btn,
 input[type=submit] {
   background-color: #04AA6D;
   color: white;
@@ -222,8 +223,9 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   float: right;
+  text-decoration: none;
 }
-
+.btn:hover,
 input[type=submit]:hover {
   background-color: white;
   color: #04AA6D;
@@ -344,6 +346,68 @@ input[disabled]:hover {
 .imagen-port:hover .hover-galeria{
   transform: scale(1);
 }
+/*****************************DETALLES PROYECTO************************************/
+.container-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-detail {
+  width: 90%;
+}
+
+.container-detail .content-text {
+  width: 90%;
+}
+
+.content-text h3 span {
+  background: rgb(34, 146, 103);
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  box-shadow: 0 0 6px 0 rgb(15, 66, 47);
+  margin-right: 5px;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.content-text p {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.actions{
+  display:flex;
+  flex-direction: row;
+}
+
+.actions .btn{
+  width: 150px;
+  text-align: center;
+  margin: 30px;
+}
+/*****************************ERROR 404************************************/
+.container.error{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.container.error p{
+  width: 500px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 10px;
+  background: rgba(243, 184, 184, 0.37);
+}
 
 @media screen and (max-width:900px) {
   header {
@@ -456,11 +520,29 @@ input[disabled]:hover {
     width: 100%;
     margin-top: 0;
   }
-
+  
   input[type=submit] {
     margin-top: 20px;
     padding: 30px;
   }
 
+/*****************************ERROR 404************************************/
 
+  .container.error p{
+    width: 300px;
+  }
+/*****************************PORTAFOLIO************************************/
+  .imagen-port{
+    width: 90%;
+  }
+
+  .actions{
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  
+  .actions .btn{
+    margin: 5px;
+  }
 }
+

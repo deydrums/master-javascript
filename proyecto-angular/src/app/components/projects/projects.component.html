@@ -1,15 +1,16 @@
 <section class="portafolio">
-    <div class="container">
-        <h2 class="title">Portafolio</h2>
-        <div class="galeria-port">
-            <div class="imagen-port" *ngFor="let project of projects">
-                <img src="{{url+'get-image/'+project.image}}" *ngIf="project.image">
-                <div class="hover-galeria">
-                    <a href="#"><img src="../../../assets/img/icono1.png" alt=""></a>
-                    <p>{{project.name}}</p>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <h2 class="title">Portafolio</h2>
+    <div class="galeria-port">
+      <div class="imagen-port" *ngFor="let project of projects">
+        <img src="{{url+'get-image/'+project.image}}" *ngIf="project.image">
+        <a [routerLink]="['/proyecto',project._id]">
+          <div class="hover-galeria">
+            <img src="../../../assets/img/icono1.png" alt="">
+            <p>{{project.name}}</p>
+          </div>
+        </a>
+      </div>
     </div>
+  </div>
 </section>
-
