@@ -309,9 +309,10 @@ input[disabled]:hover {
   width:30%;
   margin-bottom: 30px;
   overflow: hidden;
-  position: relative;
+  position:relative;
   cursor: pointer;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+
 }
 
 .imagen-port > img{
@@ -442,6 +443,7 @@ input[disabled]:hover {
     background: rgba(68, 197, 176, 0.959);
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 1;
   }
 
   .menu ul li {
@@ -451,11 +453,13 @@ input[disabled]:hover {
   }
 
   .boton-menu {
+    position:relative;
+    z-index: 10;
     float: right;
     display: block;
     cursor: pointer;
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 10px;    
   }
 
   .boton-menu.active .bar:nth-child(2) {
