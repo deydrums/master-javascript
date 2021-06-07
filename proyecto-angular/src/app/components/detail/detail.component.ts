@@ -14,6 +14,7 @@ export class DetailComponent implements OnInit {
 
   public url: string;
   public project;
+  public confirm: boolean;
 
   constructor(
     private _projectService: ProjectService,
@@ -22,6 +23,7 @@ export class DetailComponent implements OnInit {
   ) { 
     this.url = Global.url;
     this.project= new Project('','','','',2019,'','');
+    this.confirm = false;
   }
 
   ngOnInit(): void {
@@ -53,6 +55,10 @@ deleteProject(id:any){
       console.log(<any>error);
     }
   );
+}
+
+setConfirm(confirm:any){
+  this.confirm = confirm;
 }
 
 }

@@ -393,6 +393,28 @@ input[disabled]:hover {
   text-align: center;
   margin: 30px;
 }
+
+
+.btn-delete.confirm{
+  background: rgba(212, 18, 18, 0.562) !important;
+}
+
+.btn-delete.confirm:hover{
+  background: rgba(248, 248, 248, 0.562) !important;
+  color: rgba(212, 18, 18, 1) !important;
+}
+
+.text-delete-project{
+  color: rgb(34, 146, 103);
+  font-size: 20px;
+  text-align: center;
+}
+
+.confirm{
+  background:rgba(228, 15, 15, 0.055);
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
 /*****************************ERROR 404************************************/
 .container.error{
   width: 100%;

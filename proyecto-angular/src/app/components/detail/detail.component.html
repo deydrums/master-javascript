@@ -14,9 +14,19 @@
             <h3><span>4</span>Lenguajes utilizados</h3>
             <p>{{project.langs}}</p>
         </div>
-        <div class="actions">
+        <div class="actions" *ngIf="confirm == false">
         <a [routerLink]="['/editar-proyecto',project._id]" class="btn btn-edit">Editar</a>
-        <a (click)="deleteProject(project._id)" class="btn btn-delete">Borrar</a>
+        <a (click)="setConfirm(true)" class="btn btn-delete">Borrar</a>
         </div>
+
+        <div class="confirm" *ngIf="confirm == true" >
+            <h2 class="text-delete-project">Confirmar borrado</h2>
+            <div class="actions">
+                <a (click)="setConfirm(false)" class="btn btn-edit cancel">Cancelar</a>
+                <a (click)="deleteProject(project._id)" class="btn btn-delete confirm">Eliminar</a>
+            </div>
+        </div>
+
+
     </div>
 </section>
