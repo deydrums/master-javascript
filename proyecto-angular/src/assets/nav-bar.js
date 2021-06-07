@@ -1,8 +1,20 @@
-const hamburger = document.querySelector(".boton");
+document.addEventListener("DOMContentLoaded", function() { 
 
-if(hamburger){
-hamburger.addEventListener("click", () =>{
-    console.log("hamburger clicked");
-});
+const hamburger = document.querySelector(".boton-menu");
+const navMenu = document.querySelector(".menu ul");
+const navLink = document.querySelectorAll(".menu ul li a");
+
+hamburger.addEventListener("click", mobileMenu);
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 }
 
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+
+});
