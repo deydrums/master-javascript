@@ -1,10 +1,9 @@
-<section class="container contact" >
-    <h2 class="title">Contacto</h2>
+<section class="container contact">
+  <h2 class="title">Contacto</h2>
 
-    <div class="photos">
-        <div><img src="../../../assets/img/img1.jpg" title="Programacion"></div>
-        <div><img src="../../../assets/img/img2.jpg" title="Redes"></div>
-        <div><img src="../../../assets/img/img3.jpg" title="Electronica"></div>
-    </div>
-
+  <input type="text" [(ngModel)]="widthSlider" (keyup.enter)="cargarSlider()">
+  <div *ngIf="anchuraToSlider">
+  
+  <slider [anchura]="anchuraToSlider"></slider>
+  </div>
 </section>

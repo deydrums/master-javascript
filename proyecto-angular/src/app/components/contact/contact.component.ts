@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-declare const $: any;
+
 
 @Component({
   selector: 'app-contact',
@@ -7,17 +7,27 @@ declare const $: any;
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  public widthSlider!: any;
+  public anchuraToSlider!: any;
 
-  constructor() { }
+  constructor() {
+
+   }
 
   ngOnInit(): void {
-    // $("header").css("background","green");
-    $('.photos').bxSlider({
-      mode: 'fade',
-      captions: true,
-      slideWidth: 600
-    });
 
   }
+
+  // cargarSlider(){
+  //   this.anchuraToSlider = this.widthSlider;
+  // }
+
+  cargarSlider(){
+    this.anchuraToSlider = null;
+    setTimeout(() =>{
+      this.anchuraToSlider = this.widthSlider;     
+    }, 10);
+
+}
 
 }
