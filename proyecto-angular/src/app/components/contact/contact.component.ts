@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class ContactComponent implements OnInit {
   public widthSlider!: any;
   public anchuraToSlider!: any;
+  public autor!: any;
 
   constructor() {
 
@@ -29,5 +30,9 @@ export class ContactComponent implements OnInit {
     }, 10);
 
 }
+
+  getAutor(event: any){
+    this.autor = event;
+  }
 
 }

@@ -4,6 +4,14 @@
   <input type="text" [(ngModel)]="widthSlider" (keyup.enter)="cargarSlider()">
   <div *ngIf="anchuraToSlider">
   
-  <slider [anchura]="anchuraToSlider"></slider>
+  <slider [anchura]="anchuraToSlider" (conseguirAutor)="getAutor($event)"></slider>
   </div>
+
+  <div *ngIf="autor">
+    <h3>Nombre: {{autor.nombre}}</h3>
+    <h3>Website: {{autor.website}}</h3>
+    <h3>Youtube: {{autor.youtube}}</h3>
+  </div>
+  
+  
 </section>
